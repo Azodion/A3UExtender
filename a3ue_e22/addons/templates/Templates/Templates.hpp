@@ -2,7 +2,7 @@ class Templates
 {
     class E22_Base
     { 
-        requiredAddons[] = {"Soft_F_Levi_Quadbike_01", "Soft_F_RAF_Quadbike_01", "Soft_F_RAF_Quadbike_01_Winter", "vests_f_JCA_IE", "vests_f_JCA_MCRP", "Weapons_F_JCA_IA_Rifles_M4A1"};
+        requiredAddons[] = {"Soft_F_Levi_Quadbike_01", "Soft_F_RAF_Quadbike_01", "Soft_F_RAF_Quadbike_01_Winter", "vests_f_JCA_IE", "Weapons_F_JCA_IA_Rifles_M4A1"};
         basepath = QPATHTOFOLDER(Templates\E22);
         logo = "data_f_levi\Logos\arma3_levi_icon_ca.paa";
         priority = 70;
@@ -24,6 +24,16 @@ class Templates
         file = "E22_JOCD_Des";
         climate[] = {"arid"};
         description = "Northstar is a multi-national JointCom detachment operating across Europe, North Africa, and the West Atlantic, equipped with versatile marine and naval forces featuring a balanced mix of fast, mobile units and well-equipped infantry optimized for adaptability in diverse environments.";
+    };
+
+    class E22_RAF_Wood : E22_Base
+    {
+        side = "Inv";
+        flagTexture = "\a3\UI_F_Enoch\Data\CfgMarkers\Russia_CA.paa";
+        name = "[E22] RAF Woodland";
+        file = "E22_RAF_Wood";
+        climate[] = {"temperate", "tropical"};
+        description = "New Russia is a disciplined and modernized military force focused on quality over quantity, fielding well-trained troops and updated vehicles to maintain control amid internal unrest and rising global threats.";
     };
 };
 
