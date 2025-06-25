@@ -8,7 +8,7 @@ class Templates
         priority = 70;
         forceDLC[] = {"ws"};
     };
-    class E22_JC : E22_Base
+    class E22_JOCD_Wood : E22_Base
     {
         side = "Occ";
         flagTexture = "\A3\ui_f\data\map\markers\flags\nato_ca.paa";
@@ -16,6 +16,13 @@ class Templates
         file = "E22_JOCD_Wood";
         maps[] = {};
         climate[] = {"temperate", "tropical", "arctic"};
+        description = "Northstar is a multi-national JointCom detachment operating across Europe, North Africa, and the West Atlantic, equipped with versatile marine and naval forces featuring a balanced mix of fast, mobile units and well-equipped infantry optimized for adaptability in diverse environments.";
+    };
+    class E22_JOCD_Des : E22_JOCD_Wood
+    {
+        name = "[E22] JointCom Desert";
+        file = "E22_JOCD_Des";
+        climate[] = {"arid"};
         description = "Northstar is a multi-national JointCom detachment operating across Europe, North Africa, and the West Atlantic, equipped with versatile marine and naval forces featuring a balanced mix of fast, mobile units and well-equipped infantry optimized for adaptability in diverse environments.";
     };
 };
