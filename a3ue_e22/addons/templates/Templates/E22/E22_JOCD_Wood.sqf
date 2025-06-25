@@ -176,7 +176,7 @@ _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["radios", ["ItemRadio"]];
 _loadoutData set ["gpses", ["ItemGPS"]];
-_loadoutData set ["NVGs", ["NVGoggles_INDEP"]];
+_loadoutData set ["NVGs", ["E22_RAF_ANVG_black_F", "NVGoggles_OPFOR", "NVGoggles_INDEP"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["rangefinders", ["Rangefinder", "E22_DigitalBinoculars_01_khaki_F", "E22_DigitalBinoculars_01_olive_F"]];
 
@@ -244,7 +244,7 @@ _sfLoadoutData set ["vests", ["E22_V_CarrierRigKBT_01_recon_woodland_F", "E22_V_
 _sfLoadoutData set ["backpacks", ["E22_B_CombatPack_woodland", "E22_B_Kitbag_woodland", "E22_B_Kitbag_black", "E22_B_SurvivalBackpack_olive_F"]];
 _sfLoadoutData set ["helmets", ["E22_H_HelmetHBK_woodland_F", "E22_H_HelmetHBK_woodland_chops_F", "E22_H_HelmetHBK_woodland_ear_F", "E22_H_HelmetHBK_woodland_headset_F", "E22_H_HelmetHBK_black_F", "E22_H_HelmetHBK_black_chops_F", "E22_H_HelmetHBK_black_ear_F", "E22_H_HelmetHBK_black_headset_F"]];
 _sfLoadoutData set ["binoculars", ["Rangefinder", "E22_DigitalBinoculars_01_khaki_F", "E22_DigitalBinoculars_01_olive_F"]];
-//["Weapon", "Muzzle", "Rail", "Sight", [], [], "Bipod"];
+//["Weapon", "Muzzle", "Rail", "Sight", [], [], "Bipod"]
 
 _sfLoadoutData set ["lightATLaunchers", [
     ["E22_launch_MRAWS_woodland_rail_F", "", "", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
@@ -261,37 +261,358 @@ _sfLoadoutData set ["missileATLaunchers", [
     ["launch_I_Titan_short_F", "", "", "", ["Titan_AT"], [], ""]
 ]];
 _sfLoadoutData set ["AALaunchers", [
-    ["launch_I_Titan_short_F", "", "", "", ["Titan_AT"], [], ""]
+    ["launch_B_Titan_F", "", "", "", ["Titan_AA"], [], ""]
 ]];
 
-_sfLoadoutData set ["rifles", []];
-_sfLoadoutData set ["carbines", []];
-_sfLoadoutData set ["grenadeLaunchers", []];
-_sfLoadoutData set ["designatedGrenadeLaunchers", []];
-_sfLoadoutData set ["SMGs", []];
-_sfLoadoutData set ["machineGuns", []];
-_sfLoadoutData set ["marksmanRifles", []];
-_sfLoadoutData set ["sniperRifles", []];
-_sfLoadoutData set ["sidearms", []];
+_sfLoadoutData set ["rifles", [
+    ["JCA_arifle_M4A4_VFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A4_VFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A4_VFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+
+    ["JCA_arifle_M4A4_VFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A4_VFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A4_VFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+
+    ["JCA_arifle_M4A4_AFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A4_AFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A4_AFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+
+    ["JCA_arifle_M4A4_AFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A4_AFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A4_AFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""]
+]];
+_sfLoadoutData set ["carbines", [
+    ["JCA_arifle_M4A1_short_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A1_short_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A1_short_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+
+    ["JCA_arifle_M4A1_short_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A1_short_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""],
+    ["JCA_arifle_M4A1_short_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], [], ""]
+]];
+_sfLoadoutData set ["grenadeLaunchers", [
+    ["JCA_arifle_M4A4_GL_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], ["1Rnd_HE_Grenade_shell"], ""],
+    ["JCA_arifle_M4A4_GL_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], ["1Rnd_HE_Grenade_shell"], ""],
+    ["JCA_arifle_M4A4_GL_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], ["1Rnd_HE_Grenade_shell"], ""],
+
+    ["JCA_arifle_M4A4_GL_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], ["1Rnd_HE_Grenade_shell"], ""],
+    ["JCA_arifle_M4A4_GL_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], ["1Rnd_HE_Grenade_shell"], ""],
+    ["JCA_arifle_M4A4_GL_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_IR_PMAG"], ["1Rnd_HE_Grenade_shell"], ""]
+]];
+_sfLoadoutData set ["SMGs", [
+    ["JCA_smg_UMP_AFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+    ["JCA_smg_UMP_AFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+    ["JCA_smg_UMP_AFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+
+    ["JCA_smg_UMP_AFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+    ["JCA_smg_UMP_AFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+    ["JCA_smg_UMP_AFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+
+    ["JCA_smg_UMP_VFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+    ["JCA_smg_UMP_VFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+    ["JCA_smg_UMP_VFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+
+    ["JCA_smg_UMP_VFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+    ["JCA_smg_UMP_VFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""],
+    ["JCA_smg_UMP_VFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag"], [], ""]
+]];
+_sfLoadoutData set ["machineGuns", [
+    ["E22_LMG_04_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["E22_120Rnd_M30JLSW_Box_tracer_IR_F"], [], ""],
+    ["E22_LMG_04_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MROS_black_magnifier", ["E22_120Rnd_M30JLSW_Box_tracer_IR_F"], [], ""],
+    ["E22_LMG_04_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black_magnifier", ["E22_120Rnd_M30JLSW_Box_tracer_IR_F"], [], ""]
+]];
+_sfLoadoutData set ["marksmanRifles", [
+    ["JCA_arifle_SR10_AFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+    ["JCA_arifle_SR10_AFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+    ["JCA_arifle_SR10_AFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+
+    ["JCA_arifle_SR10_AFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+    ["JCA_arifle_SR10_AFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+    ["JCA_arifle_SR10_AFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+
+    ["JCA_arifle_SR10_VFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+    ["JCA_arifle_SR10_VFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+    ["JCA_arifle_SR10_VFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+
+    ["JCA_arifle_SR10_VFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+    ["JCA_arifle_SR10_VFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"],
+    ["JCA_arifle_SR10_VFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_IR_PMAG"], [], "JCA_bipod_04_black"]
+]];
+_sfLoadoutData set ["sniperRifles", [
+    ["JCA_srifle_AWM_black_F", "", "", "JCA_optic_MRPS_black", ["JCA_5Rnd_338LM_AWM_Tracer_IR_Mag"], [], "JCA_bipod_AWM_black"],
+    ["JCA_srifle_AWM_black_F", "", "", "JCA_optic_HPPO_RAD_black", ["JCA_5Rnd_338LM_AWM_Tracer_IR_Mag"], [], "JCA_bipod_AWM_black"],
+
+    ["JCA_srifle_AWM_olive_F", "", "", "JCA_optic_MRPS_black", ["JCA_5Rnd_338LM_AWM_Tracer_IR_Mag"], [], "JCA_bipod_AWM_black"],
+    ["JCA_srifle_AWM_olive_F", "", "", "JCA_optic_HPPO_RAD_black", ["JCA_5Rnd_338LM_AWM_Tracer_IR_Mag"], [], "JCA_bipod_AWM_black"]
+]];
+_sfLoadoutData set ["sidearms", [
+    ["JCA_hgun_P320_black_F", "JCA_muzzle_snds_9MM_enhanced_black", "JCA_acc_LightModule_Pistol_black", "JCA_optic_PRO_black", ["JCA_17Rnd_9x21_P320_IR_Mag"], [], ""]
+]];
+
+/////////////////////////////////
+//    Elite Loadout Data       //
+/////////////////////////////////
+
+private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
+_eliteLoadoutData set ["uniforms", ["E22_U_CombatUniform_woodland_F", "E22_U_CombatUniform_woodland_shortsleeve_F", "E22_U_CombatUniform_woodland_Shirt_F", "E22_U_CombatUniform_woodland_Shirt_shemagh_F", "E22_U_CombatUniform_woodland_tee_F"]];
+_eliteLoadoutData set ["vests", ["E22_V_CarrierRigKBT_01_recon_woodland_F", "E22_V_CarrierRigKBT_01_recon_black_F", "E22_V_CarrierRigKBT_01_woodland_F", "E22_V_CarrierRigKBT_01_black_F", "E22_V_CarrierRigKBT_01_light_woodland_F", "E22_V_CarrierRigKBT_01_light_black_F", "E22_V_CarrierRigKBT_01_compact_woodland_F", "E22_V_CarrierRigKBT_01_compact_black_F", "E22_V_CarrierRigKBT_01_combat_woodland_F", "E22_V_CarrierRigKBT_01_combat_black_F"]];
+_eliteLoadoutData set ["backpacks", ["E22_B_CombatPack_woodland", "E22_B_Kitbag_woodland", "E22_B_Kitbag_black", "E22_B_SurvivalBackpack_olive_F"]];
+_eliteLoadoutData set ["helmets", ["E22_H_HelmetHBK_woodland_F", "E22_H_HelmetHBK_woodland_chops_F", "E22_H_HelmetHBK_woodland_ear_F", "E22_H_HelmetHBK_woodland_headset_F", "E22_H_HelmetHBK_black_F", "E22_H_HelmetHBK_black_chops_F", "E22_H_HelmetHBK_black_ear_F", "E22_H_HelmetHBK_black_headset_F"]];
+_eliteLoadoutData set ["binoculars", ["Rangefinder", "E22_DigitalBinoculars_01_khaki_F", "E22_DigitalBinoculars_01_olive_F"]];
+
+_eliteLoadoutData set ["lightATLaunchers", [
+    ["E22_launch_MRAWS_woodland_rail_F", "", "", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
+    ["E22_launch_MRAWS_black_rail_F", "", "", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
+    ["E22_launch_MRAWS_black_F", "", "", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
+    ["E22_launch_MRAWS_woodland_F", "", "", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
+    ["JCA_launch_Mk153_black_F", "", "", "", ["JCA_MK153_HEAT_F"], [], ""],
+    ["JCA_launch_Mk153_olive_F", "", "", "", ["JCA_MK153_HEAT_F"], [], ""],
+    ["JCA_launch_Mk153_PWS_black_F", "", "", "", ["JCA_MK153_HEAT_F"], [], ""],
+    ["JCA_launch_Mk153_PWS_olive_F", "", "", "", ["JCA_MK153_HEAT_F"], [], ""]
+]];
+_eliteLoadoutData set ["ATLaunchers", ["launch_NLAW_F"]];
+_eliteLoadoutData set ["missileATLaunchers", [
+    ["launch_I_Titan_short_F", "", "", "", ["Titan_AT"], [], ""]
+]];
+_eliteLoadoutData set ["AALaunchers", [
+    ["launch_B_Titan_F", "", "", "", ["Titan_AA"], [], ""]
+]];
+
+_eliteLoadoutData set ["rifles", [
+    ["JCA_arifle_M4A4_VFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A4_VFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A4_VFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+
+    ["JCA_arifle_M4A4_VFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A4_VFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A4_VFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+
+    ["JCA_arifle_M4A4_VFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A4_VFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A4_VFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+
+    ["JCA_arifle_M4A4_VFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A4_VFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A4_VFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+
+    ["JCA_arifle_M4A4_AFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A4_AFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A4_AFG_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+
+    ["JCA_arifle_M4A4_AFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A4_AFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A4_AFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+
+    ["JCA_arifle_M4A4_AFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A4_AFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A4_AFG_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+
+    ["JCA_arifle_M4A4_AFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A4_AFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A4_AFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+
+    ["JCA_arifle_M4A4_GL_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_Smoke_Grenade_shell"], ""], 1,
+    ["JCA_arifle_M4A4_GL_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_Smoke_Grenade_shell"], ""], 1,
+    ["JCA_arifle_M4A4_GL_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_Smoke_Grenade_shell"], ""], 1,
+
+    ["JCA_arifle_M4A4_GL_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_Smoke_Grenade_shell"], ""], 2,
+    ["JCA_arifle_M4A4_GL_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_Smoke_Grenade_shell"], ""], 2,
+    ["JCA_arifle_M4A4_GL_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_Smoke_Grenade_shell"], ""], 2
+]];
+_eliteLoadoutData set ["carbines", [
+    ["JCA_arifle_M4A1_short_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A1_short_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A1_short_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+
+    ["JCA_arifle_M4A1_short_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A1_short_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A1_short_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+
+    ["JCA_arifle_M4A1_short_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A1_short_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+    ["JCA_arifle_M4A1_short_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 1,
+
+    ["JCA_arifle_M4A1_short_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A1_short_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2,
+    ["JCA_arifle_M4A1_short_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], [], ""], 2
+]];
+_eliteLoadoutData set ["grenadeLaunchers", [
+    ["JCA_arifle_M4A4_GL_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 1,
+    ["JCA_arifle_M4A4_GL_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 1,
+    ["JCA_arifle_M4A4_GL_black_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 1,
+    
+    ["JCA_arifle_M4A4_GL_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 2,
+    ["JCA_arifle_M4A4_GL_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 2,
+    ["JCA_arifle_M4A4_GL_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 2,
+
+    ["JCA_arifle_M4A4_GL_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 1,
+    ["JCA_arifle_M4A4_GL_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 1,
+    ["JCA_arifle_M4A4_GL_olive_F", "JCA_muzzle_snds_556_advanced_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 1,
+
+    ["JCA_arifle_M4A4_GL_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 2,
+    ["JCA_arifle_M4A4_GL_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ACOG_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 2,
+    ["JCA_arifle_M4A4_GL_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ICO_black", ["JCA_30Rnd_556x45_Tracer_Green_PMAG"], ["1Rnd_HE_Grenade_shell"], ""], 2
+]];
+_eliteLoadoutData set ["SMGs", [
+    ["JCA_smg_UMP_AFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_AFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_AFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+
+    ["JCA_smg_UMP_AFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_UMP_AFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_UMP_AFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+
+    ["JCA_smg_UMP_AFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_AFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_AFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+
+    ["JCA_smg_UMP_AFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_UMP_AFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_UMP_AFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+
+    ["JCA_smg_UMP_VFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_VFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_VFG_black_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""],
+
+    ["JCA_smg_UMP_VFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_UMP_VFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_UMP_VFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+
+    ["JCA_smg_UMP_VFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_VFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_VFG_olive_F", "JCA_muzzle_snds_45_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Magv"], [], ""], 1,
+
+    ["JCA_smg_UMP_VFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_UMP_VFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_ARO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_UMP_VFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Magv"], [], ""], 2
+]];
+_eliteLoadoutData set ["machineGuns", [
+    ["E22_LMG_04_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_AICO_black", ["E22_120Rnd_M30JLSW_Box_tracer_Green_F"], [], ""],
+    ["E22_LMG_04_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MROS_black_magnifier", ["E22_120Rnd_M30JLSW_Box_tracer_Green_F"], [], ""],
+    ["E22_LMG_04_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_IHO_black_magnifier", ["E22_120Rnd_M30JLSW_Box_tracer_Green_F"], [], ""]
+]];
+_eliteLoadoutData set ["marksmanRifles", [
+    ["JCA_arifle_SR10_AFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+    ["JCA_arifle_SR10_AFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+    ["JCA_arifle_SR10_AFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+
+    ["JCA_arifle_SR10_AFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+    ["JCA_arifle_SR10_AFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+    ["JCA_arifle_SR10_AFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+
+    ["JCA_arifle_SR10_AFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+    ["JCA_arifle_SR10_AFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+    ["JCA_arifle_SR10_AFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+
+    ["JCA_arifle_SR10_AFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+    ["JCA_arifle_SR10_AFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+    ["JCA_arifle_SR10_AFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+
+    ["JCA_arifle_SR10_VFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+    ["JCA_arifle_SR10_VFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+    ["JCA_arifle_SR10_VFG_black_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+
+    ["JCA_arifle_SR10_VFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+    ["JCA_arifle_SR10_VFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+    ["JCA_arifle_SR10_VFG_black_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+
+    ["JCA_arifle_SR10_VFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+    ["JCA_arifle_SR10_VFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+    ["JCA_arifle_SR10_VFG_olive_F", "JCA_muzzle_snds_762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 1,
+
+    ["JCA_arifle_SR10_VFG_olive_F", "JCA_muzzle_snds762_tactical_black", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_MRPS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+    ["JCA_arifle_SR10_VFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_HPPO_RAD_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2,
+    ["JCA_arifle_SR10_VFG_olive_F", "", "JCA_acc_LaserModule_black_Pointer", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_Tracer_Green_PMAG"], [], "JCA_bipod_04_black"], 2
+]];
+_eliteLoadoutData set ["sniperRifles", [
+    ["JCA_srifle_AWM_black_F", "", "", "JCA_optic_MRPS_black", ["JCA_5Rnd_338LM_AWM_Tracer_Green_Mag"], [], "JCA_bipod_AWM_black"],
+    ["JCA_srifle_AWM_black_F", "", "", "JCA_optic_HPPO_RAD_black", ["JCA_5Rnd_338LM_AWM_Tracer_Green_Mag"], [], "JCA_bipod_AWM_black"],
+
+    ["JCA_srifle_AWM_olive_F", "", "", "JCA_optic_MRPS_black", ["JCA_5Rnd_338LM_AWM_Tracer_Green_Mag"], [], "JCA_bipod_AWM_black"],
+    ["JCA_srifle_AWM_olive_F", "", "", "JCA_optic_HPPO_RAD_black", ["JCA_5Rnd_338LM_AWM_Tracer_Green_Mag"], [], "JCA_bipod_AWM_black"]
+]];
+_eliteLoadoutData set ["sidearms", [
+    ["JCA_hgun_P320_black_F", "JCA_muzzle_snds_9MM_enhanced_black", "JCA_acc_LightModule_Pistol_black", "JCA_optic_PRO_black", ["JCA_17Rnd_9x21_P320_Green_Mag"], [], ""], 1,
+    ["JCA_hgun_P320_black_F", "", "JCA_acc_LightModule_Pistol_black", "JCA_optic_PRO_black", ["JCA_17Rnd_9x21_P320_Green_Mag"], [], ""], 2
+]];
+
 /////////////////////////////////
 //    Military Loadout Data    //
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData set ["uniforms", []];
+_militaryLoadoutData set ["uniforms", ["E22_U_CombatUniform_woodland_F", "E22_U_CombatUniform_woodland_shortsleeve_F", "E22_U_CombatUniform_woodland_Shirt_F", "E22_U_CombatUniform_woodland_Shirt_shemagh_F", "E22_U_CombatUniform_woodland_tee_F"]];
 _militaryLoadoutData set ["vests", []];
 _militaryLoadoutData set ["backpacks", []];
 _militaryLoadoutData set ["helmets", []];
 _militaryLoadoutData set ["binoculars", []];
 
-_militaryLoadoutData set ["rifles", []];
-_militaryLoadoutData set ["carbines", []];
-_militaryLoadoutData set ["grenadeLaunchers", []];
-_militaryLoadoutData set ["SMGs", []];
-_militaryLoadoutData set ["machineGuns", []];
-_militaryLoadoutData set ["marksmanRifles", []];
-_militaryLoadoutData set ["sniperRifles", []];
-_militaryLoadoutData set ["sidearms", []];
+_militaryLoadoutData set ["lightATLaunchers", [
+    ["E22_launch_MRAWS_woodland_rail_F", "", "", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
+    ["E22_launch_MRAWS_black_rail_F", "", "", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
+    ["JCA_launch_Mk153_black_F", "", "", "", ["JCA_MK153_HEAT_F"], [], ""],
+    ["JCA_launch_Mk153_olive_F", "", "", "", ["JCA_MK153_HEAT_F"], [], ""]
+]];
+_militaryLoadoutData set ["ATLaunchers", ["launch_NLAW_F"]];
+_militaryLoadoutData set ["AALaunchers", [
+    ["launch_B_Titan_F", "", "", "", ["Titan_AA"], [], ""]
+]];
+
+_Optics = ["", 3, "JCA_optic_AHO_black", 1, "JCA_optic_AICO_black", 1, "JCA_optic_ARO_black", 1, "JCA_optic_CRO_black", 1, "JCA_optic_ICO_black", 1, "JCA_optic_IHO_black", 1, "JCA_optic_MROS_black", 1, "JCA_optic_ROS_black", 1];
+_LROptics = ["", 3, "JCA_optic_IHO_black", 1, "JCA_optic_MROS_black", 1, "JCA_optic_ROS_black", 1];
+_Attachments = ["JCA_optic_MRPS_black", 3, "JCA_optic_HPPO_black", 1, "JCA_optic_HPPO_RAD_black", 1, "JCA_optic_CRBS_black", 1];
+
+_militaryLoadoutData set ["rifles", [
+    ["JCA_arifle_M4A1_black_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+    ["JCA_arifle_M4A1_olive_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+
+    ["JCA_arifle_M16A4_black_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+    ["JCA_arifle_M16A4_olive_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+
+    ["JCA_arifle_M16A4_FG_black_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+    ["JCA_arifle_M16A4_FG_olive_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
+]];
+_militaryLoadoutData set ["carbines", [
+    ["JCA_arifle_M4A1_short_black_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+    ["JCA_arifle_M4A1_short_olive_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
+]];
+_militaryLoadoutData set ["grenadeLaunchers", [
+    ["JCA_arifle_M4A1_GL_black_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], ["1Rnd_HE_Grenade_shell"], ""],
+    ["JCA_arifle_M4A1_GL_olive_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], ["1Rnd_HE_Grenade_shell"], ""]
+]];
+_militaryLoadoutData set ["SMGs", [
+    ["JCA_smg_MP5_FL_black_F", "", "JCA_acc_flashlight_MP5_black", _Optics, ["JCA_30Rnd_9x21_MP5_Tracer_Green_Mag"], [], ""], 3,
+    ["JCA_smg_MP5_FL_olive_F", "", "JCA_acc_flashlight_MP5_black", _Optics, ["JCA_30Rnd_9x21_MP5_Tracer_Green_Mag"], [], ""], 3,
+
+    ["JCA_smg_MP5_AFG_black_F", "", _Attachments, _Optics, ["JCA_30Rnd_9x21_MP5_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_MP5_AFG_olive_F", "", _Attachments, _Optics, ["JCA_30Rnd_9x21_MP5_Tracer_Green_Mag"], [], ""], 2,
+
+    ["JCA_smg_MP5_VFG_black_F", "", _Attachments, _Optics, ["JCA_30Rnd_9x21_MP5_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_MP5_VFG_olive_F", "", _Attachments, _Optics, ["JCA_30Rnd_9x21_MP5_Tracer_Green_Mag"], [], ""], 2,
+
+    ["JCA_smg_UMP_black_F", "", "", _Optics, ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+    ["JCA_smg_UMP_olive_F", "", "", _Optics, ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 2,
+
+    ["JCA_smg_UMP_AFG_black_F", "", _Attachments, _Optics, ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_AFG_olive_F", "", _Attachments, _Optics, ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+
+    ["JCA_smg_UMP_VFG_black_F", "", _Attachments, _Optics, ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_VFG_olive_F", "", _Attachments, _Optics, ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1
+]];
+_militaryLoadoutData set ["machineGuns", [
+    ["E22_LMG_04_black_F", "", _Attachments, _Optics, ["E22_120Rnd_M30JLSW_Box_tracer_Green_F"], [], ""]
+]];
+_militaryLoadoutData set ["marksmanRifles", [
+    ["JCA_arifle_SR25_black_F", "", _Attachments, _LROptics, ["JCA_20Rnd_762x51_Tracer_Green_SMAG"], [], ""],
+    ["JCA_arifle_SR25_olive_F", "", _Attachments, _LROptics, ["JCA_20Rnd_762x51_Tracer_Green_SMAG"], [], ""]
+]];
+_militaryLoadoutData set ["sniperRifles", [
+    ["JCA_srifle_AWM_black_F", "", "", _LROptics, ["JCA_5Rnd_338LM_AWM_Tracer_Green_Mag"], [], "JCA_bipod_AWM_black"],
+    ["JCA_srifle_AWM_olive_F", "", "", _LROptics, ["JCA_5Rnd_338LM_AWM_Tracer_Green_Mag"], [], "JCA_bipod_AWM_black"]
+]];
+_militaryLoadoutData set ["sidearms", [
+    ["JCA_hgun_P320_black_F", "", "JCA_acc_LightModule_Pistol_black", "", ["JCA_17Rnd_9x21_P320_Green_Mag"], [], ""]
+]];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -299,44 +620,71 @@ _militaryLoadoutData set ["sidearms", []];
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 
-_policeLoadoutData set ["uniforms", []];
-_policeLoadoutData set ["vests", []];
-_policeLoadoutData set ["helmets", []];
+_policeLoadoutData set ["uniforms", ["E22_U_CombatUniform_01_woodland_F", "E22_U_CombatUniform_01_woodland_shortsleeve_F", "E22_U_CombatUniform_01_woodland_shortsleeve_gloves_F"]];
+_policeLoadoutData set ["vests", ["E22_V_CarrierRigKBT_01_holster_woodland_F", "E22_V_CarrierRigKBT_01_holster_black_F", "V_TacVest_blk_POLICE"]];
+_policeLoadoutData set ["helmets", ["E22_H_Beret_01_JTF_blue_F"]];
 
-_policeLoadoutData set ["SMGs", []];
-_policeLoadoutData set ["sidearms", []];
+_policeLoadoutData set ["SMGs", [
+    ["JCA_smg_MP5_FL_black_F", "", "JCA_acc_flashlight_MP5_black", "", ["JCA_30Rnd_9x21_MP5_Tracer_Green_Mag"], [], ""],
+    ["JCA_smg_MP5_FL_olive_F", "", "JCA_acc_flashlight_MP5_black", "", ["JCA_30Rnd_9x21_MP5_Tracer_Green_Mag"], [], ""]
+]];
+_policeLoadoutData set ["sidearms", [
+    ["JCA_hgun_P320_black_F", "", "JCA_acc_LightModule_Pistol_black", "", ["JCA_17Rnd_9x21_P320_Green_Mag"], [], ""]
+]];
 
 ////////////////////////////////
 //    Militia Loadout Data    //
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData set ["uniforms", []];
-_militiaLoadoutData set ["vests", []];
-_militiaLoadoutData set ["backpacks", []];
-_militiaLoadoutData set ["helmets", []];
+_militiaLoadoutData set ["uniforms", ["E22_U_CombatUniform_01_woodland_F", "E22_U_CombatUniform_01_woodland_shortsleeve_F", "E22_U_CombatUniform_01_woodland_shortsleeve_gloves_F"]];
+_militiaLoadoutData set ["vests", ["V_TacVest_oli", 3, "V_TacVest_blk", 3, "E22_V_CarrierRigKBT_01_holster_woodland_F", 1]];
+_militiaLoadoutData set ["backpacks", ["E22_B_CombatPack_woodland", "E22_B_Kitbag_woodland", "E22_B_SurvivalBackpack_olive_F"]];
+_militiaLoadoutData set ["helmets", ["lxWS_H_PASGT_goggles_olive_F", "lxWS_H_PASGT_goggles_black_F"]];
 
-_militiaLoadoutData set ["rifles", []];
-_militiaLoadoutData set ["carbines", []];
-_militiaLoadoutData set ["grenadeLaunchers", []];
-_militiaLoadoutData set ["SMGs", []];
-_militiaLoadoutData set ["machineGuns", []];
-_militiaLoadoutData set ["marksmanRifles", []];
-_militiaLoadoutData set ["sidearms", []];
+_militiaLoadoutData set ["rifles", [
+    ["JCA_arifle_M16A4_black_F", "", "", "", ["30Rnd_556x45_Stanag", 3, "30Rnd_556x45_Stanag_Tracer_Green", 1], [], ""],
+    ["JCA_arifle_M16A4_olive_F", "", "", "", ["30Rnd_556x45_Stanag", 3, "30Rnd_556x45_Stanag_Tracer_Green", 1], [], ""]
+]];
+_militiaLoadoutData set ["carbines", [
+    ["JCA_arifle_M16A4_black_F", "", "", "", ["30Rnd_556x45_Stanag", 3, "30Rnd_556x45_Stanag_Tracer_Green", 1], [], ""],
+    ["JCA_arifle_M16A4_olive_F", "", "", "", ["30Rnd_556x45_Stanag", 3, "30Rnd_556x45_Stanag_Tracer_Green", 1], [], ""]
+]];
+_militiaLoadoutData set ["grenadeLaunchers", [
+    ["JCA_arifle_M16A4_GL_black_F", "", "", "", ["30Rnd_556x45_Stanag", 3, "30Rnd_556x45_Stanag_Tracer_Green", 1], ["1Rnd_HE_Grenade_shell"], ""],
+    ["JCA_arifle_M16A4_GL_olive_F", "", "", "", ["30Rnd_556x45_Stanag", 3, "30Rnd_556x45_Stanag_Tracer_Green", 1], ["1Rnd_HE_Grenade_shell"], ""]
+]];
+_militiaLoadoutData set ["SMGs", [
+    ["JCA_smg_MP5_FL_black_F", "", "JCA_acc_flashlight_MP5_black", "", ["JCA_30Rnd_9x21_MP5_Tracer_Green_Mag"], [], ""], 3,
+    ["JCA_smg_MP5_FL_olive_F", "", "JCA_acc_flashlight_MP5_black", "", ["JCA_30Rnd_9x21_MP5_Tracer_Green_Mag"], [], ""], 3,
+    
+    ["JCA_smg_UMP_black_F", "", "", "", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1,
+    ["JCA_smg_UMP_olive_F", "", "", "", ["JCA_25Rnd_45ACP_UMP_Tracer_Green_Mag"], [], ""], 1
+]];
+_militiaLoadoutData set ["machineGuns", [
+    ["E22_LMG_04_black_F", "", "", "", ["E22_120Rnd_M30JLSW_Box_F", "E22_120Rnd_M30JLSW_Box_Green_F"], [], ""]
+]];
+_militiaLoadoutData set ["marksmanRifles", [
+    ["JCA_arifle_SR25_black_F", "", "", "JCA_optic_ACOG_black", ["JCA_20Rnd_762x51_SMAG", "JCA_20Rnd_762x51_Green_SMAG"], [], ""],
+    ["JCA_arifle_SR25_black_F", "", "", "JCA_optic_CRBS_black", ["JCA_20Rnd_762x51_SMAG", "JCA_20Rnd_762x51_Green_SMAG"], [], ""]
+]];
+_militiaLoadoutData set ["sidearms", [
+    ["JCA_hgun_P320_black_F", "", "JCA_acc_LightModule_Pistol_black", "", ["JCA_17Rnd_9x21_P320_Green_Mag"], [], ""]
+]];
 
 //////////////////////////
 //    Misc Loadouts     //
 //////////////////////////
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData set ["uniforms", []];
-_crewLoadoutData set ["vests", []];
-_crewLoadoutData set ["helmets", []];
+_crewLoadoutData set ["uniforms", ["E22_U_Coveralls_olive_F", "E22_U_Coveralls_grey_F", "E22_U_Coveralls_green_F", "E22_U_Coveralls_woodland_F"]];
+_crewLoadoutData set ["vests", ["E22_V_CrewVest_Cargo_F", "E22_V_CarrierRigKBT_01_crew_woodland_F", "E22_V_CarrierRigKBT_01_crew_black_F"]];
+_crewLoadoutData set ["helmets", ["E22_H_Helmet_Crew_woodland_F"]];
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["uniforms", []];
-_pilotLoadoutData set ["vests", []];
-_pilotLoadoutData set ["helmets", []];
+_pilotLoadoutData set ["uniforms", ["E22_U_Coveralls_grey_F"]];
+_pilotLoadoutData set ["vests", ["E22_V_CrewVest_Fighter_F"]];
+_pilotLoadoutData set ["helmets", ["E22_H_Helmet_Heli_JTF_crew_black_F", "E22_H_Helmet_Heli_JTF_black_F", "E22_H_Helmet_Fighter_JTF_F"]];
 
 /////////////////////////////////
 //    Unit Type Definitions    //

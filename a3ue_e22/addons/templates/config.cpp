@@ -21,5 +21,3 @@ class A3A
     #include "Templates.hpp"
     #include "CfgLogistics.hpp" //this should be at the end of the config.cpp as it will redefine the macro ADDON
 };
-
-#include "CfgWeapons.hpp"
