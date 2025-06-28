@@ -45,6 +45,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["vehiclesLightTanks", ["E22_B_JTF_UGV_01_rcws_F"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["E22_B_JTF_MBT_03_cannon_UP_F", "E22_B_JTF_MBT_03_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["E22_B_JTF_APC_Wheeled_03_cannon_AA_F"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["E22_B_JTF_APC_Wheeled_03_cannon_F", "E22_B_JTF_MRAP_03_hmg_F", "E22_B_JTF_MRAP_01_hmg_F", "E22_B_JTF_MRAP_01_gmg_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["E22_B_JTF_Boat_Transport_01_F","E22_B_JTF_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["E22_B_JTF_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
@@ -559,8 +560,8 @@ _militaryLoadoutData set ["AALaunchers", [
 ]];
 
 _Optics = ["", 3, "JCA_optic_AHO_black", 1, "JCA_optic_AICO_black", 1, "JCA_optic_ARO_black", 1, "JCA_optic_CRO_black", 1, "JCA_optic_ICO_black", 1, "JCA_optic_IHO_black", 1, "JCA_optic_MROS_black", 1, "JCA_optic_ROS_black", 1];
-_LROptics = ["", 3, "JCA_optic_IHO_black", 1, "JCA_optic_MROS_black", 1, "JCA_optic_ROS_black", 1];
-_Attachments = ["JCA_optic_MRPS_black", 3, "JCA_optic_HPPO_black", 1, "JCA_optic_HPPO_RAD_black", 1, "JCA_optic_CRBS_black", 1];
+_LROptics = ["JCA_optic_MRPS_black", 1, "JCA_optic_HPPO_black", 1, "JCA_optic_HPPO_RAD_black", 1, "JCA_optic_CRBS_black", 1];
+_Attachments = ["", 3, "JCA_acc_LaserModule_black_Pointer", 1, "JCA_acc_flashlight_tactical_black", 1, "JCA_acc_DualMount_black_Pointer", 1];
 
 _militaryLoadoutData set ["rifles", [
     ["JCA_arifle_M4A1_black_F", "", _Attachments, _Optics, ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
