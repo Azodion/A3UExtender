@@ -80,7 +80,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 
 ["staticMGs", ["I_HMG_02_high_F", "I_GMG_01_high_F", "I_HMG_01_high_F"]] call _fnc_saveToTemplate;
 ["staticAT", ["I_static_AT_F"]] call _fnc_saveToTemplate;
-["staticAA", ["I_static_AA_F"]] call _fnc_saveToTemplate;
+["staticAA", ["I_static_AA_F", "Aegis_I_G_ZU23_lxWS_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["I_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 
@@ -89,6 +89,9 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
+
+["vehicleRadar", "B_Radar_System_01_F"] call _fnc_saveToTemplate;
+["vehicleSam", "B_SAM_System_03_F"] call _fnc_saveToTemplate;
 
 //Minefield definition
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
