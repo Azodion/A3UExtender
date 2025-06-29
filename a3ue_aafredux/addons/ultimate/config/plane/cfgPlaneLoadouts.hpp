@@ -1,49 +1,54 @@
 class planeLoadouts
 {
-    // It also has support for these parameters, though I haven't used them before.
-    // mainGun
-    // rocketLauncher[]
-    // missileLauncher[]
-    // bombRacks[]
-    // diveParams[]
     class CASDIVE
     {
-        class B_Plane_CAS_01_dynamicLoadout_F
+        class I_Plane_Fighter_04_F
         {
-            loadout[] = {"","","","","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_BombCluster_03_F","","","",""};
-            mainGun = "Gatling_30mm_Plane_CAS_01_F";
-            bombRacks[] = {"Bomb_04_Plane_CAS_01_F", "BombCluster_03_F"};
+            loadout[] = {"PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AGM_02_x1","PylonMissile_Bomb_GBU12_x1","PylonMissile_Bomb_GBU12_x1"};
+            mainGun = "weapon_Fighter_Gun20mm_AA";
+            missileLauncher[] = {"weapon_BIM9xLauncher", "weapon_AGM_65Launcher", "weapon_GBU12Launcher"};
+            diveParams[] = {1200, 600, 180, 55, 15, {0,0}};
+        };
+        class I_Plane_Fighter_03_dynamicLoadout_F
+        {
+            loadout[] = {"PylonRack_1Rnd_AAA_missiles","PylonRack_3Rnd_LG_scalpel","PylonMissile_1Rnd_Bomb_04_F","PylonWeapon_300Rnd_20mm_shells","PylonMissile_1Rnd_Bomb_04_F","PylonRack_3Rnd_LG_scalpel","PylonRack_1Rnd_AAA_missiles"};
+            mainGun = "Twin_Cannon_20mm_gunpod";
+            missileLauncher[] = {"missiles_ASRAAM", "missiles_SCALPEL", "Bomb_04_Plane_CAS_01_F"};
             diveParams[] = {1200, 600, 180, 55, 15, {0,0}};
         };
     };
 
     class CAS
     {
-        class B_Plane_CAS_01_dynamicLoadout_F
+        class I_Plane_Fighter_04_F
         {
-            loadout[] = {"PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F"};
-            mainGun = "Gatling_30mm_Plane_CAS_01_F";
-            rocketLauncher[] = {"Rocket_04_HE_Plane_CAS_01_F"};
-            missileLauncher[] = {"Missile_AGM_02_Plane_CAS_01_F", "missiles_SCALPEL"};
+            loadout[] = {"PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AGM_02_x1","PylonMissile_Bomb_GBU12_x1","PylonMissile_Bomb_GBU12_x1"};
+            mainGun = "weapon_Fighter_Gun20mm_AA";
+            missileLauncher[] = {"weapon_BIM9xLauncher", "weapon_AGM_65Launcher", "weapon_GBU12Launcher"};
+        };
+        class I_Plane_Fighter_03_dynamicLoadout_F
+        {
+            loadout[] = {"PylonRack_1Rnd_AAA_missiles","PylonRack_3Rnd_LG_scalpel","PylonMissile_1Rnd_Bomb_04_F","PylonWeapon_300Rnd_20mm_shells","PylonMissile_1Rnd_Bomb_04_F","PylonRack_3Rnd_LG_scalpel","PylonRack_1Rnd_AAA_missiles"};
+            mainGun = "Twin_Cannon_20mm_gunpod";
+            missileLauncher[] = {"missiles_ASRAAM", "missiles_SCALPEL", "Bomb_04_Plane_CAS_01_F"};
         };
     };
    
     class AA
     {
-        class AMF_RAFALE_C_01_F
+        class I_Plane_Fighter_04_F
         {
-            loadout[] = {"PylonMissile_Missile_MICAEM_x1","PylonMissile_Missile_MICAEM_x1","PylonRack_3_Missile_MICAEM_x1","PylonRack_3_Missile_MICAEM_x1","PylonRack_Missile_MICAIR_x1","PylonRack_Missile_MICAIR_x1","PylonRack_Missile_TANK_02_x1_f","PylonRack_Missile_TANK_02_x1_f","PylonRack_Missile_METEOR_INT_x1","PylonRack_Missile_METEOR_INT_x1","PylonRack_Missile_TANK_01_x1_f"};
-            mainGun = "weapon_30m791";
-            missileLauncher[] = {"weapon_MICAIRLauncher","weapon_MICAEMLauncher","weapon_METEORLauncher"};
+            loadout[] = {"PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonRack_Missile_AMRAAM_C_x1","PylonRack_Missile_AMRAAM_C_x1","PylonRack_Missile_AMRAAM_C_x2","PylonRack_Missile_AMRAAM_C_x2"};
+            mainGun = "weapon_Fighter_Gun20mm_AA";
+            missileLauncher[] = {"weapon_BIM9xLauncher", "weapon_AMRAAMLauncher"};
             diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
         };
-        class AMF_RAFALE_CRO_01_C : AMF_RAFALE_C_01_F {};
-        class AMF_RAFALE_EGYPTIAN_01_C : AMF_RAFALE_C_01_F {};
-        class AMF_RAFALE_ARABIAN_01_C : AMF_RAFALE_C_01_F {};
-        class AMF_RAFALE_GREEK_01_C : AMF_RAFALE_C_01_F {};
-        class AMF_RAFALE_INDIA_01_C : AMF_RAFALE_C_01_F {};
-        class AMF_RAFALE_INDO_01_C : AMF_RAFALE_C_01_F {};
-        class AMF_RAFALE_QATARIAN_01_C : AMF_RAFALE_C_01_F {};
-        // Variants inherit from the main one
+        class I_Plane_Fighter_03_dynamicLoadout_F
+        {
+            loadout[] = {"PylonRack_1Rnd_AAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_AAA_missiles"};
+            mainGun = "Twin_Cannon_20mm_gunpod";
+            missileLauncher[] = {"missiles_ASRAAM", "missiles_Zephyr"};
+            diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
+        };
     };
 };
