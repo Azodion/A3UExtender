@@ -15,3 +15,8 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+class A3A // remove this block if you're not adding params for your extender
+{
+    #include "Params.hpp"
+};
